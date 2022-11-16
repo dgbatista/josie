@@ -18,6 +18,7 @@
     #8900f2
     #6400f4
     #2d00f7
+    #8e4b9e
 }
 body {
     width: 100%;
@@ -55,14 +56,12 @@ body {
     align-items: center;
 }
 .navbar li{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     list-style: none;
     display: inline-block;
     margin-left: 30px;
-}
-.navbar li:hover {
-    opacity: 0.5;
+    text-align: center;
 }
 #logo--instagram,
 #logo--linkedin,
@@ -74,6 +73,11 @@ body {
 .navbar img{
     height: 30px;
     width: auto;
+    transition: 0.3s;
+}
+.navbar li:hover a img{
+    height: 35px;
+    opacity: 0.5;
 }
 
 
@@ -116,26 +120,73 @@ body {
 #courses {
     text-align: center;
     background: rgba(242, 0, 137, 0.1);
-    /* background: url('../images/bg.jpg'); */
+    background: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;  
     background-size: cover;
+    padding: 20px 0;
 }
 .courses {
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+}
+.courses--title {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #8e4b9e;
+    text-transform: uppercase;
 }
 .courses--itens {
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
 }
-.courses--item {
-    border:2px solid rgba(242, 0, 137, 0.1);
-    width: 360px;
-    height: 250px;
+.courses--item1,
+.courses--item2,
+.courses--item3 {
+    width: 300px;
+    height: 300px;
     background-color: #FFF;
-    
+    background: url('../images/courses/kami.jpeg');
+}
+.courses--item1 {
+    background: url('../images/courses/kami.jpeg');
+}
+.courses--item2 {
+    background: url('../images/courses/jamboard.jpeg');
+}
+.courses--item3 {
+    background: url('../images/courses/sos.jpeg');
+}
+.courses-link {
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+}
+.courses-link:hover {
+    background: #8e4b9e;
+    border-color:#8e4b9e;
+    opacity: .5s;
+}
+.curses--title {
+    padding-top: 10px;
+    border-top: 2px solid #FFF;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;   
+}
+.courses--description {
+    margin-top:10px;
+    font-size: 16px;
 }
 
+footer {
+    height:500px;;
+}
 
 
