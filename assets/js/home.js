@@ -12,19 +12,15 @@ function updateSlideshow (param){
 
     console.log(param)
     if(param !== undefined){
-        // document.querySelector('.depoiments--pointers a.active').classList.remove('active'); 
+        document.querySelector('.depoiments--pointers a.active').classList.remove('active'); 
         if(param == 0){
-            document.querySelector(".depoiments--area").style.marginLeft = '-100vw';
-            slideCurrent++;
+            document.querySelector(".depoiments--area").style.marginLeft = '-0';
             document.querySelector(`.depoiments--pointers a[data-pointer="${param}"]`).classList.add('active');
-
         }else if(param == 1){
-            document.querySelector(".depoiments--area").style.marginLeft = '-200vw';
-            slideCurrent++;
+            document.querySelector(".depoiments--area").style.marginLeft = '-100vw';
             document.querySelector(`.depoiments--pointers a[data-pointer="${param}"]`).classList.add('active');
         }else {
-            document.querySelector(".depoiments--area").style.marginLeft = '0';
-            slideCurrent = 0;
+            document.querySelector(".depoiments--area").style.marginLeft = '-200vw';
             document.querySelector(`.depoiments--pointers a[data-pointer="${param}"]`).classList.add('active');
         }
     }
