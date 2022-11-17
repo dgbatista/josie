@@ -248,13 +248,18 @@ body {
 .depoiments--area {
     height: 100%;
     width: 300vw;
-    display: flex;  
+    display: flex; 
+    transition: all 0.5s; 
 }
 .depoiments--foto {
     width: 100px;
     height: 100px;
     border-radius: 50px;
     background-color: #CCC;
+}
+.depoiments--foto img{
+    height: 100%;
+    width: auto;
 }
 .depoiments--name {
     font-size: 20px;
@@ -283,7 +288,6 @@ body {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    transition: 1s;
 }
 .depoiments--item-title {
     display: flex;
@@ -295,7 +299,7 @@ body {
     margin: 20px 0px;
     
 }
-.depoiments--pointer {
+.depoiments--pointers a{
     width: 25px;
     height: 25px;
     border: 2px solid #8e4b9e;
@@ -303,7 +307,7 @@ body {
     transition: 0.3s;
 }
 .depoiments--pointer:hover,
-.depoiments--pointer.active{
+.depoiments--pointers a.active{
     background-color: #8e4b9e;
 }
 .depoiments--pointers a:not(:last-child) {
@@ -313,5 +317,4 @@ body {
 footer {
     height:500px;
 }
-
 
