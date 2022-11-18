@@ -21,6 +21,7 @@ function updateSlideshow (param){
             document.querySelector(`.depoiments--pointers a[data-pointer="${param}"]`).classList.add('active');
         }else {
             document.querySelector(".depoiments--area").style.marginLeft = '-200vw';
+            
             document.querySelector(`.depoiments--pointers a[data-pointer="${param}"]`).classList.add('active');
         }
     }
