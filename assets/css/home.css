@@ -326,10 +326,10 @@ body {
     
 }
 .depoiments--pointers a{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: 2px solid #8e4b9e;
-    border-radius: 15px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 .depoiments--pointer:hover,
@@ -345,6 +345,7 @@ body {
     padding-bottom: 20px;
 }
 #article h2 {
+    text-align: center;
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -353,7 +354,8 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 .article a {
     text-decoration: none;
@@ -362,7 +364,6 @@ body {
     padding: 20px 0px;
 }
 .article a:hover {
-    /* opacity: 0.3; */
     background: rgba(242, 0, 137, 0.1);
     border-radius: 10px;
 }
@@ -394,24 +395,35 @@ body {
 }
 
 
-
+/*FOOTER*/
 #footer {
     padding: 30px 0;
 }
+#footer a {
+    text-decoration: none;
+    list-style: none;
+}
+#footer a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
 .footer--contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
-
 .footer--contact a{
     display: inline-block;
     color: #000;
-    text-decoration: none;
     font-size: 22px;
     height: 15px;
-    transition: 0.5s;
+}
+.footer--left,
+.footer--center,
+.footer--right {
+    flex:1;
+    text-align: center;
 }
 .contact-social ul{
     height: 33px;
@@ -419,16 +431,14 @@ body {
     display: inline-flex;
 }
 .contact-social ul li a {
-    margin-left: 20px;
+    display: inline-block;
+    height: 38px;
+    margin-right: 40px;
 }
 .contact-social li a img{
     background-color: #FFF;
     height: inherit;
     border-radius: 10px;
-}
-
-.footer--right {
-
 }
 .footer--right img{
     width: 100px;
