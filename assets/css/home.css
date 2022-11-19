@@ -211,7 +211,7 @@ body {
     text-decoration: none;
     list-style: none;
     color: #FFF;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    /* border: 2px solid rgba(255, 255, 255, 0.5); */
     border-radius: 10px;
     padding: 10px;
     transition: .3s;
@@ -257,11 +257,11 @@ body {
     flex-direction: column;
     justify-content:center;
     border-bottom: 1px solid #8e4b9e;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .depoiments--title {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
@@ -339,45 +339,113 @@ body {
 .depoiments--pointers a:not(:last-child) {
     margin-right: 30px;
 }
-
-footer {
-    position: relative;
-    bottom: 0;
-    height:250px;
+#article {
     background: rgba(242, 0, 137, 0.1);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#article h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.article a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    padding: 20px 0px;
+}
+.article a:hover {
+    /* opacity: 0.3; */
+    background: rgba(242, 0, 137, 0.1);
+    border-radius: 10px;
+}
+.article--item {
+    width: 340px;
+    height: auto;
+    margin: 10px 20px;
+}
+.article--date {
+    padding: 10px;
+    background-color: #8e4b9e;
+    color: #FFF;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.article--foto {
+    width: 340px;
+    height: 200px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+.article--title {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+.article--text {
+    line-height: 20px;
+}
+
+
+
+#footer {
+    padding: 30px 0;
 }
 .footer--contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px 0;
 }
 
 .footer--contact a{
     display: inline-block;
-    color: #FFF;
+    color: #000;
     text-decoration: none;
     font-size: 22px;
     height: 15px;
     transition: 0.5s;
 }
+.contact-social ul{
+    height: 33px;
+    list-style: none;
+    display: inline-flex;
+}
+.contact-social ul li a {
+    margin-left: 20px;
+}
+.contact-social li a img{
+    background-color: #FFF;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.footer--right {
+
+}
+.footer--right img{
+    width: 100px;
+    height:auto;
+}
 .footer--contact a img {
     background-color: #8e4b9e;
     height: 12px;
-    line-height: 21px;
     width: auto;
 }
 .footer--developer {
-    position: absolute;
-    bottom: 10px;
-    height: 80px;
-    width: 100%;
-    max-width: 1140px;
-    margin: auto;
     display: flex;
     justify-content:center;
     align-items:center;
     border-top: 1px solid #8e4b9e;
     font-size: 15px;
+    padding-top: 20px;
 }
 .footer--developer a span{    
     color: #8e4b9e;
