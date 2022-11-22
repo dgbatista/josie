@@ -37,6 +37,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100px;
+    background-color: #FFF;
 }
 .logo {
     background-image: url('../images/avatar.png');
@@ -208,6 +209,7 @@ body {
     background-position: center;
 }
 .courses-link {
+    font-size: 18px;
     text-decoration: none;
     list-style: none;
     color: #FFF;
@@ -381,7 +383,7 @@ body {
     margin: 10px 0px;
 }
 .article--foto {
-    width: 340px;
+    width: inherit;
     height: 200px;
     background-color: #FFF;
     margin-bottom: 10px;
@@ -465,3 +467,154 @@ body {
     font-weight: 600;
 }
 
+/*RESPONSIVIDADE*/
+@media (min-width: 1000px) and (max-width: 1140px) {
+
+    .about-me{ 
+        display: block;
+        text-align: center;  
+    }
+    .about-left {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .depoiments--item-title p {
+        padding: 0 30px;
+    }
+    .article--item {
+        width: 290px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:999px) {
+    .about-me{ 
+        display: block;
+        text-align: center;  
+    }
+    .about-left {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .about-right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .courses--itens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses--item1,
+    .courses--item2,
+    .courses--item3 {
+        width: 550px;
+        height: 500px;
+    }
+    .courses-link:not(:first-child) {
+        margin-top: 30px;
+    }
+    .depoiments--item {
+        padding: 0 30px;
+    }
+    .footer--contact {
+        padding-left: 20px;
+    }
+    .footer--contact a {
+        font-size: 21px;
+    }
+}
+@media (max-width: 778px){
+    #header {
+        background-color: #FFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid #8e4b9e;
+    }
+    .logo {
+        display: none;
+    }
+    li#logo--email {
+        display: none;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar img {
+        height: 50px;
+    }
+    .navbar ul{
+        gap: 60px;
+    }
+    .navbar li {
+        margin: 0;
+    }
+    .about-me{ 
+        display: block;
+        text-align: center; 
+    }
+    .about-left {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .about-right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .about-right h1 {
+        font-size: 58px;
+    }
+    .courses--itens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses-link:not(:first-child) {
+        margin-top: 30px;
+    }
+    .depoiments--item {
+        padding: 0 30px;
+    }
+    .footer--contact {
+        padding-left: 20px;
+    }
+    .footer--contact a {
+        font-size: 21px;
+    }
+    .depoiments--title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .depoiments--title h2 {
+        font-size: 25px;
+    }
+    .article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* .article--item {
+        width: 90vw;
+    } */
+    .footer--contact {
+        flex-wrap: wrap;
+    }
+    .footer--contact a {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    .footer--developer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer--developer a{
+        margin-top: 10px;
+    }
+    
+}
