@@ -520,7 +520,7 @@ body {
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px){
+@media (min-width: 425px) and (max-width: 768px){
     #header {
         background-color: #FFF;
         position: fixed;
@@ -679,7 +679,7 @@ body {
     
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 425px) {
 
     #header {
         background-color: red;
