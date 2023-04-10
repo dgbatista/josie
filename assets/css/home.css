@@ -115,10 +115,6 @@ body {
     display: flex;
     justify-content:center;
     align-items:center;
-    /* background: url('../images/logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 .banner>img {
     height: 100%;
@@ -126,8 +122,6 @@ body {
     max-height: calc(100vh -100px);
     
 }
-
-
 /*ABOUT */
 #about-me {
     border-bottom: 1px solid #8e4b9e;
@@ -143,14 +137,13 @@ body {
     flex:1;
     height: 400px;
     background-color: #8e4b9e;
-    background-image: url('../images/josie.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border-radius: 50%;
-    padding: 20px;
-    margin-right: 50px;
     border: 1px solid #8e4b9e;
+    overflow: hidden;
+}
+.about-left img{
+    height: 100%;
+    width: auto;
 }
 .about-right {
     flex: 2;
@@ -502,34 +495,15 @@ body {
 }
 
 
-/*RESPONSIVENESS*/
-@media (min-width: 1000px) and (max-width: 1140px) {
+/* RESPONSIVENESS */
+@media (min-width: 768px) and (max-width: 1024px) {
 
-    .about-me{ 
-        flex-direction: column;
-        text-align: center;  
-        height: 100vh;
-    }
-    .about-right {
-        padding: 10px 20px 0 20px;
-    }
-    .about-right h1 {
-        font-size: 60px;
-    }
-    .about-left {
-        width: 230px;
-        height: auto;
-        margin: auto;
-    }
-    .depoiments--item-title p {
-        padding: 0 30px;
-    }
-}
-
-@media (min-width: 768px) and (max-width:999px) {
     .about-me{
         flex-direction: column;
         text-align: center;  
+    }
+    .about-left img{
+        height: 400px;
     }
     .article--item{
         max-width: 460px;
@@ -546,7 +520,7 @@ body {
     }
 }
 
-@media (max-width: 425px){
+@media (min-width: 425px) and (max-width: 767px){
     #header {
         background-color: #FFF;
         position: fixed;
@@ -584,8 +558,8 @@ body {
         text-align: center; 
     }
     .about-left {
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
         margin: auto;
     }
     .about-right {
@@ -637,9 +611,6 @@ body {
     }
     .depoiments--title h2 {
         font-size: 25px;
-    }
-    .depoiments--item-title p {
-        /* font-size: 16px; */
     }
     .depoiments--pointers{
         display: none;
@@ -680,7 +651,8 @@ body {
         margin: auto;
     }
     .depoiments--area .depoiments--item:nth-child(12) .depoiments--item-title p {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 30px;
     }
     .article {
         flex-direction: column;
@@ -707,14 +679,19 @@ body {
     
 }
 
-@media (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 424px) {
+
     #header {
-        background-color: #FFF;
+        background-color: red;
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         border-bottom: 1px solid #8e4b9e;
+    }
+    .banner>img{
+        width:100%;
+        height: auto;
     }
     .logo {
         display: none;
@@ -741,8 +718,8 @@ body {
         text-align: center; 
     }
     .about-left {
-        width: 300px;
-        height: 300px;
+        width: 260px;
+        height: 260px;
         margin: auto;
     }
     .about-right {
@@ -803,35 +780,57 @@ body {
     }
     .depoiments--foto {
         width: 50px;
+        height: 50px;
     }
+
     .depoiments--area .depoiments--item:nth-child(1) .depoiments--item-title p, 
     .depoiments--area .depoiments--item:nth-child(4) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(9) .depoiments--item-title p{
-        font-size: 22px;
-    }
+    .depoiments--area .depoiments--item:nth-child(9) .depoiments--item-title p,
     .depoiments--area .depoiments--item:nth-child(13) .depoiments--item-title p {
-        font-size: 24px;
+        font-size: 25px;
+        line-height: 39px;
     }
     .depoiments--area .depoiments--item:nth-child(2) .depoiments--item-title p,
     .depoiments--area .depoiments--item:nth-child(3) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(5) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(8) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(11) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(6) .depoiments--item-title p,
-    .depoiments--area .depoiments--item:nth-child(7) .depoiments--item-title p {
-        font-size: 18px;
+    .depoiments--area .depoiments--item:nth-child(5) .depoiments--item-title p {
+        line-height: 23px;
     }
+    .depoiments--area .depoiments--item:nth-child(3) .depoiments--item-title p,
+    .depoiments--area .depoiments--item:nth-child(5) .depoiments--item-title p{
+        font-size: 21px;
+    }
+    .depoiments--area .depoiments--item:nth-child(6) .depoiments--item-title p,
+    .depoiments--area .depoiments--item:nth-child(7) .depoiments--item-title p{
+        line-height: 28px;
+    }
+    .depoiments--area .depoiments--item:nth-child(7) .depoiments--item-title p,
+    .depoiments--area .depoiments--item:nth-child(6) .depoiments--item-title p {
+        font-size: 25px;
+    }
+    .depoiments--area .depoiments--item:nth-child(8) .depoiments--item-title p{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .depoiments--area .depoiments--item:nth-child(10) .depoiments--item-title p{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .depoiments--area .depoiments--item:nth-child(11) .depoiments--item-title p{
+        line-height: 30px;
+    }
+
     .depoiments--area .depoiments--item:nth-child(1),
     .depoiments--area .depoiments--item:nth-child(3),
     .depoiments--area .depoiments--item:nth-child(5){
         margin: auto;
     }
-    .depoiments--area .depoiments--item:nth-child(10) .depoiments--item-title p {
-        font-size: 16px;
+    .depoiments--area .depoiments--item:nth-child(12) .depoiments--item-title p {
+        font-size: 17px;
+        line-height: 20px;
     }
 
-    .depoiments--area .depoiments--item:nth-child(12) .depoiments--item-title p {
-        font-size: 13px;
+    .depoiments--area .depoiments--item:nth-child(8) .depoiments--foto{
+        width: 100px;
     }
     .article {
         flex-direction: column;
@@ -840,8 +839,7 @@ body {
         text-align: center;
     }
     .article--foto{
-        height: auto;
-        background-color: transparent;
+        height: inherit;
     }
     .footer--contact {
         flex-wrap: wrap;
@@ -856,5 +854,9 @@ body {
     .footer--developer a{
         margin-top: 10px;
     }
+    
+}
+
+@media (max-width: 319px) {
     
 }
